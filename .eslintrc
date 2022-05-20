@@ -4,7 +4,9 @@
     "rules": {
       "quotes": [2, "single"],
       "indent": ["error", 4],
-      "semi": ["error", "always"]
+      "semi": ["error", "always"],
+      "eqeqeq": "error",
+      "comma-dangle": ["error", "never"]
     }
 
 }
