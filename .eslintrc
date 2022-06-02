@@ -3,7 +3,7 @@
     "plugins": ["@typescript-eslint"],
     "rules": {
       "quotes": [2, "single"],
-      "indent": ["error", 4],
+      "indent": ["error", 2],
       "semi": ["error", "always"],
       "eqeqeq": "error",
       "comma-dangle": ["error", "never"]
