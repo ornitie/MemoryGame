@@ -5,13 +5,15 @@ import { AppComponent } from './app.component';
 import { CardComponent } from './card/card.component';
 import { QuestionComponent } from './question/question.component';
 import { OptionComponent } from './option/option.component';
+import { NavbarComponent } from './navbar/navbar.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     CardComponent,
     QuestionComponent,
-    OptionComponent
+    OptionComponent,
+    NavbarComponent
   ],
   imports: [
     BrowserModule
