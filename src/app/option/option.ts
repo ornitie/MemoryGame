@@ -4,7 +4,7 @@ export class Option {
   id: string;
   text: string;
   type: string;
-  question: Question;
+  question?: Question;
   
   constructor(id: string, text:string, type: string, question: Question){
     this.id = id;

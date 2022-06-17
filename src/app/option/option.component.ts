@@ -1,4 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+import { Input } from '@angular/core';
+import { Option } from './option';
 
 @Component({
   selector: 'app-option',
@@ -6,6 +8,9 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./option.component.css']
 })
 export class OptionComponent implements OnInit {
+
+  @Input()
+    option?: Option;
 
   constructor() { }
 

@@ -4,14 +4,8 @@
   </div>
 </div>
 <div class="columns">
-  <div class="column is-one-third">
-    <app-option></app-option>
-  </div>
-  <div class="column is-one-third">
-    <app-option></app-option>
-  </div>
-  <div class="column is-one-third">
-    <app-option></app-option>
+  <div *ngFor="let option of this.options" class="column">
+    <app-option [option]="option"></app-option>
   </div>
 </div>
-<button (click)="getQuestions()">TEST</button>
+<button (click)="getQuestion()">TEST</button>

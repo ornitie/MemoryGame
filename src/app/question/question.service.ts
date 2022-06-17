@@ -9,8 +9,9 @@ export class QuestionService {
 
   constructor() { }
 
-  getQuestions(): Question[] {
-    console.log(questionSample);
-    return [];
+  getQuestion(): Question {
+    const question: Question = questionSample.questions[0];
+    console.log(question);
+    return question;
   }
 }
