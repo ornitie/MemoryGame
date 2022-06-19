@@ -6,6 +6,7 @@ import { CardComponent } from './card/card.component';
 import { QuestionComponent } from './question/question.component';
 import { OptionComponent } from './option/option.component';
 import { NavbarComponent } from './navbar/navbar.component';
+import { GridsComponent } from './grids/grids.component';
 
 @NgModule({
   declarations: [
@@ -13,7 +14,8 @@ import { NavbarComponent } from './navbar/navbar.component';
     CardComponent,
     QuestionComponent,
     OptionComponent,
-    NavbarComponent
+    NavbarComponent,
+    GridsComponent
   ],
   imports: [
     BrowserModule
