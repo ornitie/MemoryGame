@@ -1,0 +1,12 @@
+h2 {
+  text-align: left;
+}
+
+title {
+  margin-top: 5%;
+}
+
+.columns {
+  height: 90%;
+  align-items: center;
+}

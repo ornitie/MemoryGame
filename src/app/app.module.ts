@@ -10,6 +10,7 @@ import { GridsComponent } from './grids/grids.component';
 import { AppRoutingModule } from './app-routing.module';
 import { BibliographyComponent } from './bibliography/bibliography.component';
 import { ErrorComponent } from './error/error.component';
+import { HomepageComponent } from './homepage/homepage.component';
 
 @NgModule({
   declarations: [
@@ -20,7 +21,8 @@ import { ErrorComponent } from './error/error.component';
     NavbarComponent,
     GridsComponent,
     BibliographyComponent,
-    ErrorComponent
+    ErrorComponent,
+    HomepageComponent
   ],
   imports: [
     BrowserModule,
