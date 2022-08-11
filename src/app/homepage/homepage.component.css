@@ -10,3 +10,7 @@ title {
   height: 90%;
   align-items: center;
 }
+
+h2 {
+  color: var(--blue);
+}
