@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
-
+import { Question } from './question';
+import { QuestionService } from './question.service';
 @Component({
   selector: 'app-question',
   templateUrl: './question.component.html',
@@ -7,9 +8,15 @@ import { Component, OnInit } from '@angular/core';
 })
 export class QuestionComponent implements OnInit {
 
-  constructor() { }
+  questions: Array<Question> = [];
+
+  constructor(private questionService: QuestionService) { }
 
   ngOnInit(): void {
+  }
+
+  getQuestions(){
+    this.questionService.getQuestions();
   }
 
 }
