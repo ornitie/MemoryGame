@@ -1,0 +1,29 @@
+@charset "utf-8";
+
+$primary: #000080;
+
+* {
+  box-sizing: border-box;
+  padding: 0;
+}
+
+body, html {
+  margin: 0;
+  height: 100%;
+  overflow: auto !important;
+}
+
+app-root, app-homepage {
+  display: block;
+  height: 100%;
+  overflow: hidden;
+}
+
+:root {
+  --blue: #000080;
+}
+
+@import "../node_modules/bulma/bulma.sass";
+
+
+  
