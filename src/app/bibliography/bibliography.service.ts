@@ -4,7 +4,7 @@ import bibliography from './bibliography.sample';
 @Injectable({
   providedIn: 'root'
 })
-export class GridsService {
+export class BibliographyService {
 
   constructor() { }
 
