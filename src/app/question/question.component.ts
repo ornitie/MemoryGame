@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { Option } from '../option/option';
 import { Question } from './question';
 import { QuestionService } from './question.service';
 @Component({
@@ -8,15 +9,18 @@ import { QuestionService } from './question.service';
 })
 export class QuestionComponent implements OnInit {
 
-  questions: Array<Question> = [];
+  question?: Question;
+  options: Array<Option> = [];
 
   constructor(private questionService: QuestionService) { }
 
   ngOnInit(): void {
+    this.getQuestion();
   }
 
-  getQuestions(){
-    this.questionService.getQuestions();
+  getQuestion(){
+    this.question = this.questionService.getQuestion();
+    this.options = this.question.options;
   }
 
 }
