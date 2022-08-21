@@ -1,23 +1,23 @@
 import { Component, OnInit } from '@angular/core';
 
 @Component({
-    selector: 'app-card',
-    templateUrl: './card.component.html',
-    styleUrls: ['./card.component.css']
+  selector: 'app-card',
+  templateUrl: './card.component.html',
+  styleUrls: ['./card.component.css']
 })
 export class CardComponent implements OnInit {
 
-    constructor() { }
+  constructor() { }
 
-    ngOnInit(): void {
-        var x = document.getElementsByName('card')[0];
+  ngOnInit(): void {
+    var x = document.getElementsByName('card')[0];
 
-        function print(){ 
-            document.getElementsByName('card')[0].classList.toggle('flipped');
-        }
-
-        x.addEventListener('click', print, false);
-
+    function print(){ 
+      document.getElementsByName('card')[0].classList.toggle('flipped');
     }
+
+    x.addEventListener('click', print, false);
+
+  }
 
 }

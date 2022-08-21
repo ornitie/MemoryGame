@@ -1,6 +1,6 @@
 import { NgModule } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
-import { CardComponent } from './card/card.component';
+import { GridsComponent } from './grids/grids.component';
 import { ErrorComponent } from './error/error.component';
 import { QuestionComponent } from './question/question.component';
 import { HomepageComponent } from './homepage/homepage.component';
@@ -10,7 +10,7 @@ const routes: Routes = [
   { path: '', component: HomepageComponent },
   { path: 'question', component: QuestionComponent },
   { path: 'bibliography', component: BibliographyComponent },
-  { path: 'test', component: CardComponent },
+  { path: 'test', component: GridsComponent },
   { path: '**', component: ErrorComponent }
 ];
 

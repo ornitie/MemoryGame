@@ -1,5 +1,5 @@
 import { Injectable } from '@angular/core';
-import grids from './grids.sample';
+import bibliography from './bibliography.sample';
 
 @Injectable({
   providedIn: 'root'
@@ -9,10 +9,10 @@ export class GridsService {
   constructor() { }
 
   getHeaders(): Array<String> {
-    return grids.headers;
+    return bibliography.headers;
   }
 
   getData(): Array<Array<String>> {
-    return grids.data;
+    return bibliography.data;
   }
 }
