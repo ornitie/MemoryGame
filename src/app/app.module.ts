@@ -11,6 +11,7 @@ import { AppRoutingModule } from './app-routing.module';
 import { BibliographyComponent } from './bibliography/bibliography.component';
 import { ErrorComponent } from './error/error.component';
 import { HomepageComponent } from './homepage/homepage.component';
+import { ModalComponent } from './modal/modal.component';
 
 @NgModule({
   declarations: [
@@ -21,7 +22,8 @@ import { HomepageComponent } from './homepage/homepage.component';
     GridsComponent,
     BibliographyComponent,
     ErrorComponent,
-    HomepageComponent
+    HomepageComponent,
+    ModalComponent
   ],
   imports: [
     BrowserModule,
