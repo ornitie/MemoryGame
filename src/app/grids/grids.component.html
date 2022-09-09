@@ -4,20 +4,21 @@
     <table class="table is-bordered is-hoverable is-fullwidth">
       <thead>
         <tr>
-          <th>Base</th>
-          <th>Qualification or relegation</th>
+          <th *ngFor="let header of this.headers">
+            {{ header }}
+          </th>
         </tr>
       </thead>
       <tfoot>
         <tr>
-          <th>Verbo</th>
-          <th>Qualification or relegation</th>
+          <th *ngFor="let header of this.headers">
+            {{ header }}
+          </th>
         </tr>
       </tfoot>
       <tbody>
-        <tr>
-          <td>17</td>
-          <td>17</td>
+        <tr *ngFor="let row of this.data">
+          <td *ngFor="let cell of row">{{ cell }}</td>
         </tr>
       </tbody>
     </table>

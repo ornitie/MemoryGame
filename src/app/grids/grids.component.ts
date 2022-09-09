@@ -7,6 +7,9 @@ import { Component, OnInit } from '@angular/core';
 })
 export class GridsComponent implements OnInit {
 
+  headers = ['one','two'];
+  data = [['yep', 'yep']];
+
   constructor() { }
 
   ngOnInit(): void {
