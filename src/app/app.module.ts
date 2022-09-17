@@ -12,6 +12,7 @@ import { BibliographyComponent } from './bibliography/bibliography.component';
 import { ErrorComponent } from './error/error.component';
 import { HomepageComponent } from './homepage/homepage.component';
 import { ModalComponent } from './modal/modal.component';
+import { FormComponent } from './form/form.component';
 
 @NgModule({
   declarations: [
@@ -23,7 +24,8 @@ import { ModalComponent } from './modal/modal.component';
     BibliographyComponent,
     ErrorComponent,
     HomepageComponent,
-    ModalComponent
+    ModalComponent,
+    FormComponent
   ],
   imports: [
     BrowserModule,
