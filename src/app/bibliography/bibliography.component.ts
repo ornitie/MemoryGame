@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component } from '@angular/core';
 import { BibliographyService } from './bibliography.service';
 
 @Component({
@@ -6,7 +6,7 @@ import { BibliographyService } from './bibliography.service';
   templateUrl: './bibliography.component.html',
   styleUrls: ['./bibliography.component.css']
 })
-export class BibliographyComponent implements OnInit {
+export class BibliographyComponent {
 
   data?: Array<Array<String>>;
   headers?: Array<String>;
