@@ -1,8 +1,44 @@
 <form [formGroup]="profileForm" (ngSubmit)="onSubmit()">
-  <label for="first-name">First Name: </label>
-  <input id="first-name" type="text" formControlName="firstName" />
-
-  <label for="last-name">Last Name: </label>
-  <input id="last-name" type="text" formControlName="lastName" />
-  <button type="submit">Submit</button>
+  <div class="control">
+    <div class="column is-2">
+      <label class="label" for="first-name">Verbo</label>
+      <div class="control">
+        <input
+          class="input"
+          id="first-name"
+          type="text"
+          formControlName="verbName"
+        />
+      </div>
+    </div>
+  </div>
+  <div class="field is-horizontal">
+    <div
+      class="field is-normal px-1"
+      *ngFor="let field of this.profileForm.controls | keyvalue"
+    >
+      <label class="label" for="{{ field.key }}">{{
+        this.formName.get(field.key)
+      }}</label>
+      <div class="control">
+        <input
+          class="input"
+          id="{{ field.key }}"
+          type="text"
+          formControlName="{{ field.key }}"
+        />
+      </div>
+    </div>
+  </div>
+  <div class="control">
+    <p
+      [class.active-error]="displayError"
+      [class.unactive-error]="!displayError"
+    >
+      {{ this.error }}
+    </p>
+  </div>
+  <div class="columns field is-grouped is-grouped-right">
+    <button class="button" type="submit">Submit</button>
+  </div>
 </form>
