@@ -7,6 +7,7 @@ import { QuestionComponent } from './question/question.component';
 import { OptionComponent } from './option/option.component';
 import { NavbarComponent } from './navbar/navbar.component';
 import { GridsComponent } from './grids/grids.component';
+import { AppRoutingModule } from './app-routing.module';
 
 @NgModule({
   declarations: [
@@ -18,7 +19,8 @@ import { GridsComponent } from './grids/grids.component';
     GridsComponent
   ],
   imports: [
-    BrowserModule
+    BrowserModule,
+    AppRoutingModule
   ],
   providers: [],
   bootstrap: [AppComponent]
