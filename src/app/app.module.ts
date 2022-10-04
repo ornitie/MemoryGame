@@ -8,6 +8,7 @@ import { OptionComponent } from './option/option.component';
 import { NavbarComponent } from './navbar/navbar.component';
 import { GridsComponent } from './grids/grids.component';
 import { AppRoutingModule } from './app-routing.module';
+import { BibliographyComponent } from './bibliography/bibliography.component';
 
 @NgModule({
   declarations: [
@@ -16,7 +17,8 @@ import { AppRoutingModule } from './app-routing.module';
     QuestionComponent,
     OptionComponent,
     NavbarComponent,
-    GridsComponent
+    GridsComponent,
+    BibliographyComponent
   ],
   imports: [
     BrowserModule,
