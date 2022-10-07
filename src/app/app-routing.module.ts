@@ -3,8 +3,10 @@ import { Routes, RouterModule } from '@angular/router';
 import { CardComponent } from './card/card.component';
 import { ErrorComponent } from './error/error.component';
 import { QuestionComponent } from './question/question.component';
+import { HomepageComponent } from './homepage/homepage.component';
 
 const routes: Routes = [
+  { path: '', component: HomepageComponent },
   { path: 'question', component: QuestionComponent },
   { path: 'test', component: CardComponent },
   { path: '**', component: ErrorComponent }
