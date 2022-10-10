@@ -10,3 +10,7 @@ img {
 title {
   margin-top: 5%;
 }
+
+h2 {
+  color: var(--blue);
+}

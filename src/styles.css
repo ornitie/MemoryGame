@@ -16,3 +16,7 @@ app-homepage {
   height: 100%;
   overflow: hidden;
 }
+
+:root {
+  --blue: #000080;
+}
