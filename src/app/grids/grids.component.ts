@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, Input } from '@angular/core';
 
 @Component({
   selector: 'app-grids',
@@ -7,10 +7,21 @@ import { Component, OnInit } from '@angular/core';
 })
 export class GridsComponent implements OnInit {
 
-  headers = ['one','two'];
-  data = [['yep', 'yep']];
+  @Input()
+    headers?: Array<String>;
 
-  constructor() { }
+  @Input()
+    data?: Array<Array<String>>;
+
+  constructor() {
+    if (!this.headers){
+      this.headers = ['one','two'];
+    }
+
+    if (!this.data){
+      this.data = [['yep', 'nope'], ['something', 'else']];
+    }
+  }
 
   ngOnInit(): void {
   }
