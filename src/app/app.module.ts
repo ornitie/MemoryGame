@@ -2,7 +2,7 @@ import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 
 import { AppComponent } from './app.component';
-import { CardComponent } from './card/card.component';
+import { QuestionModule } from './question/question.module';
 import { QuestionComponent } from './question/question.component';
 import { OptionComponent } from './option/option.component';
 import { NavbarComponent } from './navbar/navbar.component';
@@ -15,7 +15,6 @@ import { HomepageComponent } from './homepage/homepage.component';
 @NgModule({
   declarations: [
     AppComponent,
-    CardComponent,
     QuestionComponent,
     OptionComponent,
     NavbarComponent,
@@ -26,7 +25,8 @@ import { HomepageComponent } from './homepage/homepage.component';
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    QuestionModule
   ],
   providers: [],
   bootstrap: [AppComponent]
