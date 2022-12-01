@@ -4,3 +4,11 @@
 
   <app-grids [data]="data" [headers]="headers"></app-grids>
 </section>
+
+<button (click)="openModal()">Open JS example modal</button>
+
+<app-modal [isActive]="isModalOpen" [closeModal]="closeModal">
+  Lorem ipsum dolor sit amet consectetur adipisicing elit. Cupiditate nihil non
+  temporibus error incidunt sunt quaerat accusantium adipisci neque suscipit ea
+  ratione, eos, laboriosam animi aliquam? Perspiciatis libero neque voluptatum.
+</app-modal>
