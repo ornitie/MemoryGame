@@ -8,7 +8,7 @@ import { Component, Input } from '@angular/core';
 export class ModalComponent  {
 
   @Input()
-    isActive: String = 'is-active';
+    isActive: Boolean = false;
 
   @Input()
     closeModal = () => (false);

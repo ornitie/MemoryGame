@@ -10,7 +10,7 @@ export class BibliographyComponent implements OnInit {
 
   data?: Array<Array<String>>;
   headers?: Array<String>;
-  isModalOpen: String = '';
+  isModalOpen: Boolean = false;
 
   constructor(private bibliographyService: BibliographyService) { 
     this.openModal = this.openModal.bind(this);
@@ -26,11 +26,11 @@ export class BibliographyComponent implements OnInit {
   openModal(){
     console.log(this.isModalOpen);
     console.log(':v');
-    this.isModalOpen = 'is-active';
+    this.isModalOpen = true;
   }
 
   closeModal = () => {
-    this.isModalOpen = 'asdasd';
+    this.isModalOpen = false;
     return false;
   };
 
