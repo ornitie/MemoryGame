@@ -4,7 +4,10 @@ export default {
       'id': '1',
       'text': '¿Is this a testing Question?',
       'answer': 'Yes',
-      'type': 'Test',
+      'type': {
+        'id': '1',
+        'title': 'Test'
+      },
       'options': [{
         'id': '1',
         'text': 'Option 1',
