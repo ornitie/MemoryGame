@@ -1,4 +1,7 @@
 export default {
-  headers: ['One', 'Two', 'Three'],
-  data: [['a','b','c'], ['4','5','6']]
+  headers: ['','Je', 'Tu', 'Il/Elle', 'Nous', 'Vous', 'Ils/Elles'],
+  data: [
+    ['Aller','vais','vas','va','allons','allez','vont'], 
+    ['Avoir','ai','as', 'a', 'avond', 'avez', 'ont']
+  ]
 };

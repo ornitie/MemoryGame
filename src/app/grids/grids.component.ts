@@ -1,11 +1,11 @@
-import { Component, OnInit, Input } from '@angular/core';
+import { Component, Input } from '@angular/core';
 
 @Component({
   selector: 'app-grids',
   templateUrl: './grids.component.html',
   styleUrls: ['./grids.component.css']
 })
-export class GridsComponent implements OnInit {
+export class GridsComponent {
 
   @Input()
     headers?: Array<String>;
@@ -21,9 +21,6 @@ export class GridsComponent implements OnInit {
     if (!this.data){
       this.data = [['yep', 'nope'], ['something', 'else']];
     }
-  }
-
-  ngOnInit(): void {
   }
 
 }

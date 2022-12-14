@@ -3,12 +3,15 @@
   <h2 class="subtitle">Vista de bibliografía para el repaso del glosario.</h2>
 
   <app-grids [data]="data" [headers]="headers"></app-grids>
+  <div class="columns">
+    <div class="column">
+      <button class="button" (click)="openModal()">
+        Open JS example modal
+      </button>
+    </div>
+  </div>
 </section>
 
-<button (click)="openModal()">Open JS example modal</button>
-
 <app-modal [isActive]="isModalOpen" [closeModal]="closeModal">
-  Lorem ipsum dolor sit amet consectetur adipisicing elit. Cupiditate nihil non
-  temporibus error incidunt sunt quaerat accusantium adipisci neque suscipit ea
-  ratione, eos, laboriosam animi aliquam? Perspiciatis libero neque voluptatum.
+  <app-form></app-form>
 </app-modal>
