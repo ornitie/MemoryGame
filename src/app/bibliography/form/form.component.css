@@ -1,0 +1,7 @@
+.active-error {
+  color: red;
+}
+
+.unactive-error {
+  display: none;
+}
