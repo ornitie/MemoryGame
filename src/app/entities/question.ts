@@ -1,4 +1,4 @@
-import { Option } from '../option/option';
+import { Option } from './option';
 import { QuestionType } from './question-type';
 
 export class Question {
