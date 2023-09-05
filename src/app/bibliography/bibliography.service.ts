@@ -1,22 +1,28 @@
 import { Injectable } from '@angular/core';
-import bibliography from './bibliography.sample';
+import { IModalService } from '../modal/modal.service';
+import database from '../../assets/database.json';
 
 @Injectable({
   providedIn: 'root'
 })
-export class BibliographyService {
+export class BibliographyService implements IModalService{
 
   constructor() { }
+
+  execute(): void {
+    console.log('ITS ALIVEEEE');
+    database.bibliography.data.push(['a','b','c']);
+  };
 
   saveNewWord(){
     return;
   }
 
   getHeaders(): Array<String> {
-    return bibliography.headers;
+    return database.bibliography.headers;
   }
 
   getData(): Array<Array<String>> {
-    return bibliography.data;
+    return database.bibliography.data;
   }
 }

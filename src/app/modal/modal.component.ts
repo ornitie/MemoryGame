@@ -1,4 +1,6 @@
 import { Component, Input } from '@angular/core';
+import { DefaultModalService, IModalService } from './modal.service';
+
 
 @Component({
   selector: 'app-modal',
@@ -13,5 +15,12 @@ export class ModalComponent  {
   @Input()
     closeModal = () => (false);
 
-  constructor() { }
+  @Input()
+    service: IModalService = new DefaultModalService();
+
+  constructor() {}
+
+  execute(): void {
+    this.service.execute();
+  }
 }
