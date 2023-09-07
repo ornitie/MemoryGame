@@ -1,7 +1,0 @@
-export default {
-  headers: ['','Je', 'Tu', 'Il/Elle', 'Nous', 'Vous', 'Ils/Elles'],
-  data: [
-    ['Aller','vais','vas','va','allons','allez','vont'], 
-    ['Avoir','ai','as', 'a', 'avond', 'avez', 'ont']
-  ]
-};
