@@ -8,6 +8,10 @@ export class BibliographyService {
 
   constructor() { }
 
+  saveNewWord(){
+    return;
+  }
+
   getHeaders(): Array<String> {
     return bibliography.headers;
   }
