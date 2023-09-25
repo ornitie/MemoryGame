@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { Input } from '@angular/core';
-import { Option } from './option';
+import { Option } from '../entities/option';
 
 @Component({
   selector: 'app-option',
