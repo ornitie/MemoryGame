@@ -12,7 +12,7 @@ export class BibliographyComponent {
   headers?: Array<String>;
   isModalOpen: Boolean = false;
 
-  constructor(private bibliographyService: BibliographyService) { 
+  constructor(public bibliographyService: BibliographyService) { 
     this.openModal = this.openModal.bind(this);
   }
 
