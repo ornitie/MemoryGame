@@ -9,10 +9,7 @@ export class BibliographyService implements IModalService{
 
   constructor() { }
 
-  execute(): void {
-    console.log('ITS ALIVEEEE');
-    database.bibliography.data.push(['a','b','c']);
-  };
+  execute(): void {};
 
   saveNewWord(){
     return;

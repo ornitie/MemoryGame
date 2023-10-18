@@ -1,5 +1,5 @@
 export interface IModalService {
-    execute: () => (void),
+    execute: (...args: any[]) => (void),
 }
 
 export class DefaultModalService implements IModalService {
